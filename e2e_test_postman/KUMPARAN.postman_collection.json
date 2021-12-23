@@ -1,0 +1,85 @@
+{
+	"info": {
+		"_postman_id": "cab44c6d-c17d-4b5a-92cb-dcf22c2d3e71",
+		"name": "KUMPARAN",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "{{url_kumparan_test}}/api/v1/article?page=1&size=10&text_search=est",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url_kumparan_test}}/api/v1/article",
+					"host": [
+						"{{url_kumparan_test}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"article"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "size",
+							"value": "10",
+							"disabled": true
+						},
+						{
+							"key": "query",
+							"value": "uah",
+							"disabled": true
+						},
+						{
+							"key": "author",
+							"value": "Cecep",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "{{url_kumparan_test}}/api/v1/article",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"author\": \"JAMES CLEAR\",\r\n    \"title\": \"For a More Creative Brain Follow These 5 Steps\",\r\n    \"body\": \"Nearly all great ideas follow a similar creative process and this article explains how this process works. Understanding this is important because creative thinking is one of the most useful skills you can possess. Nearly every problem you face in work and in life can benefit from innovative solutions, lateral thinking, and creative ideas. Anyone can learn to be creative by using these five steps. That's not to say being creative is easy. Uncovering your creative genius requires courage and tons of practice. However, this five-step approach should help demystify the creative process and illuminate the path to more innovative thinking.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url_kumparan_test}}/api/v1/article",
+					"host": [
+						"{{url_kumparan_test}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"article"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
